@@ -1,0 +1,42 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tuleviku plaan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<i class="fa fa-edit"></i>
+<i class="fa fa-edit" style="font-size:24px"></i>
+<i class="fa fa-edit" style="font-size:36px"></i>
+<i class="fa fa-edit" style="font-size:48px;color:red"></i>
+<br>
+  <script type="text/javascript" src="clock.js">
+</script>
+  <script src="proov.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#insert-view" class="menu-link insert-view active-menu">Sisestus</a></li>
+      <li class="menu-item"><a href="#list-view" class="menu-link list-view">Loend</a></li>
+    </ul>
+  </nav>
+  <main role="main">
+    <div id="insert-view">
+         <span id="digiClock"></span>
+	<br><br><label> Kuupaev: </label>
+      <input type='datetime-local' id='add_date'><br><br>
+	  <label> Sundmus: </label>
+	<input type="text" name="tegevus"  id='event_description'><br><br><br>
+      <button id='add_new_event'>LISA SUNDMUS</button>
+      <div id="error"></div>
+    </div>
+   <div id="list-view">
+     <ul id="loend" id="kokku"></ul>
+	   <!--   <input type="search" placeholder="Enter keyword" id="search"><br> -->
+   </div>
+ </main>
+</body>
+</html>
